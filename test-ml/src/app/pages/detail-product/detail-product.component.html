@@ -1,0 +1,25 @@
+<div class="container-ml content-detail-product">
+  <div class="row">
+    <div class="col-md-9 container-img-product">
+      <img [src]="responseItem?.items.picture">
+    </div>
+    <div class="col container-detail-product">
+      <span class="product_stock">
+        {{responseItem?.items.condition === 'new' ? 'Nuevo' : ''}}
+        {{responseItem?.items.sold_quantity}}
+        {{responseItem?.items.sold_quantity.length > 0 ? 'Vendido' : 'Vendidos'}}
+      </span>
+      <h1 class="product_title">{{responseItem?.items.title}}</h1>
+      <h3 class="product_price">
+        {{responseItem?.items.price.amount | currency: responseItem?.items.price.currency.toUpperCase() :'symbol-narrow'}}
+      </h3>
+      <a class="product_btn button-primary">Comprar</a>
+    </div>
+    <div class="col-md-9 container-description-product" *ngIf="responseItem?.items.description">
+      <h4 class="product_description_title">Descripción del producto</h4>
+      <p class="product_description_p">
+        {{responseItem?.items.description}}
+      </p>
+    </div>
+  </div>
+</div>

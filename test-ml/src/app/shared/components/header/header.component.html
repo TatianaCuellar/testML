@@ -1,0 +1,15 @@
+<header class="header ">
+  <div class="container-ml content-main d-flex">
+    <a class="btn_home col" href="/">
+      <img src="assets/icons/Logo_ml.png" alt="icono mercado libre">
+    </a>
+    <form class="search-box col-md-11">
+      <input class="search" type="text" placeholder="Nunca dejes de buscar" [formControl]="search" />
+      <a class="btn_search" (click)="onSubmit()">
+        <img src="assets/icons/ic_search.png" alt="icono de busqueda">
+      </a>
+    </form>
+  </div>
+</header>
+<app-breadcrumbs [categories]="response?.categories"></app-breadcrumbs>
+<app-search-result *ngIf="isDetail" [textDefault]="textDefault" [search]="response" (isDetail)="updateisItem($event)"></app-search-result>

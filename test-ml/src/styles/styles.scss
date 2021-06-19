@@ -1,0 +1,47 @@
+@import "reset";
+@import "variables";
+
+body {
+  background: $white-dark-color !important;
+}
+.container-ml {
+  max-width: 80%;
+  margin: auto;
+}
+
+.button-primary {
+  background: $blue-color;
+  color: $white-color;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  padding: $min-space - 2;
+  text-decoration: none;
+
+  &:hover {
+    color: $white-color;
+  }
+}
+
+.breadcrumbs {
+
+}
+
+h1 {
+
+}
+h2 {
+
+}
+
+h3 {
+
+}
+
+span {
+
+}
+a {
+  cursor: pointer;
+}

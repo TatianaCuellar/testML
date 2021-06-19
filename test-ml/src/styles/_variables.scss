@@ -1,0 +1,21 @@
+// Colores
+$yellow-color: #FFE600;
+$black-color: #333333;
+$gray-color: #999999;
+$white-dark-color: #EEEEEE;
+$white-color: white;
+$blue-color: #3883FA;
+
+// Fuente
+$min-size: 12px;
+$min-medium-size: $min-size + 2px; // 14px
+$medium-size: $min-size + 4px; // 16
+$min-small-size: $min-size + 6px; // 18
+$x-large-size: $min-size * 2; // 24
+$xx-large-size: $min-medium-size * 2; // 28
+$xxx-large-size: $x-large-size * 2; //48
+
+
+// Espacios
+$min-space: 16px;
+$max-space: $min-space * 2;

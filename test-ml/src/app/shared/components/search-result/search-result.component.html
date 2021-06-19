@@ -1,0 +1,26 @@
+<div class="container-ml container-search-result">
+  <ng-container *ngIf="textDefault === ''; else default">
+    <div class="row">
+      <ng-container *ngFor="let item of search?.items">
+        <a class="col-12" (click)="navigateForId(item?.id)">
+          <div class="row">
+            <div class="col-md-3 container-img-product">
+              <img [src]="item?.picture">
+            </div>
+            <div class="col container-description-product">
+              <div class="product_header">
+                <h4 class="product_price col">{{item?.price.amount | currency: item?.price.currency.toUpperCase() :'symbol-narrow'}} <img src="../../../../assets/icons/ic_shipping.png" *ngIf="item?.free_shipping"></h4>
+                <span class="product_city col-3">{{item?.country}}</span>
+              </div>
+              <h1 class="product_title">{{item?.title}}</h1>
+            </div>
+            <hr class="col-11">
+          </div>
+        </a>
+      </ng-container>
+    </div>
+  </ng-container>
+  <ng-template #default>
+    {{textDefault}}
+  </ng-template>
+</div>

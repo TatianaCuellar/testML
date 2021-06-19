@@ -1,0 +1,56 @@
+@import "../../../../styles/variables";
+
+.container-search-result {
+  background: $white-color;
+  padding: $min-space;
+  margin: $min-space auto;
+
+  a {
+    text-decoration: none;
+    color: initial;
+
+    .container-img-product {
+      > img {
+        position: relative;
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .container-description-product {
+      display: flex;
+      flex-direction: column;
+      gap: $max-space;
+      padding-left: $min-space;
+      margin-top: $min-space;
+
+      .product {
+        &_header {
+          display: flex;
+        }
+
+        &_price {
+          font-size: $x-large-size;
+          display: flex;
+          & > img {
+            margin: auto $min-space - 10;
+          }
+        }
+
+        &_city {
+          font-size: $min-size;
+          color: $gray-color;
+        }
+
+        &_title {
+          font-size: $min-small-size;
+        }
+      }
+    }
+
+    hr {
+      margin: $min-space auto;
+      color: $gray-color;
+    }
+  }
+}

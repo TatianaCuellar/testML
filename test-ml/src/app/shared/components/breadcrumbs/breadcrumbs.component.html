@@ -1,0 +1,7 @@
+<div class="container-ml container-breadcrumds">
+  <ul>
+    <li class="item" *ngFor="let item of categories?.path_from_root">
+      <a [class]="categories?.id === item?.id ? 'primary' : 'secundary'">{{item?.name}}</a>
+    </li>
+  </ul>
+</div>

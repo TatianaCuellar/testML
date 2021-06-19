@@ -1,0 +1,18 @@
+{
+  "name": "api-ml",
+  "version": "1.0.0",
+  "description": "API Mercado Libre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tatiana Cuellar",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "request": "^2.88.2",
+    "require": "^2.4.20"
+  }
+}

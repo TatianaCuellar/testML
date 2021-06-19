@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.header {
+  background: $yellow-color;
+  .btn_home {
+    text-align: right;
+    margin: auto $max-space auto 0;
+  }
+  .content-main {
+    padding: $min-medium-size 0;
+    .search-box {
+      position: relative;
+      input[type = 'text'] {
+        background: $white-color;
+        padding: $min-space;
+        font-size: $medium-size;
+        border: none;
+        width: 100%;
+      }
+
+      &> a.btn_search {
+        background: $white-dark-color;
+        padding: $min-space;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
