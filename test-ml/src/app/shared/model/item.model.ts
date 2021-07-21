@@ -1,5 +1,8 @@
 import {Price} from "./price.model";
 
+/**
+ * Modelo descripción de un producto
+ */
 export interface Item {
   id:            string;
   title:         string;

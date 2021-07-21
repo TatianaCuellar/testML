@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve -o --proxy-config proxy.conf.json",
     "build": "ng build",
+    "compodoc": "./node_modules/.bin/compodoc -p tsconfig.app.json -s --port=4400",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -29,6 +30,7 @@
     "@angular-devkit/build-angular": "~12.0.4",
     "@angular/cli": "~12.0.4",
     "@angular/compiler-cli": "~12.0.4",
+    "@compodoc/compodoc": "^1.1.14",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "https-proxy-agent": "^5.0.0",

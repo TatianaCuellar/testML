@@ -1,5 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+/**
+ * Pipe para que muestre el tipo de moneda
+ */
 @Pipe({
   name: 'currency'
 })
