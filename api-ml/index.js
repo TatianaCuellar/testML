@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const request = require('request');
 const exphbs = require("express-handlebars");
+const swaggerUI = require('swagger-ui-express');
+const swaggerDoc = require('./swagger.json');
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDoc));
 
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
